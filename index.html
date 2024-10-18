@@ -1,81 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Rose Birthday Cards</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <!-- partial:index.partial.html -->
-    <div class="container">
-      <!-- card one hermit -->
 
-      <div class="tarot-card">
-        <img src="images/7.png" />
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <title>Rose Birthday Cards</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+    rel="stylesheet">
+  <style>
+    h1 {
 
-      <div class="tarot-card">
-        <img src="images/6.png" />
-      </div>
+      font-family: "Playwrite GB S", serif;
+      font-optical-sizing: auto;
 
-      <div class="tarot-card">
-        <img src="images/5.png" />
-      </div>
 
-      <div class="tarot-card">
-        <img src="images/4.png" />
-      </div>
+      color: wheat;
+      text-align: center;
+    }
+  </style>
+</head>
 
-      <!-- card two temperance -->
-      <div class="tarot-card shuffle">
-        <img src="images/3.png" />
-      </div>
+<body>
 
-      <!-- card three hanged-man -->
-      <div class="tarot-card">
-        <img src="images/2.png" />
-      </div>
+  <h1>Click in Page to see next</h1>
+  <!-- partial:index.partial.html -->
+  <div class="container">
+    <!-- card one hermit -->
 
-      <!-- card four hierophant -->
-      <div class="tarot-card">
-        <img src="images/1.png" />
-      </div>
-
-      <!--   <h1>Click to Shuffle</h1> -->
+    <div class="tarot-card">
+      <img src="images/7.png" />
     </div>
 
-    <!-- sm btns -->
-    
+    <div class="tarot-card">
+      <img src="images/6.png" />
+    </div>
 
-    <!-- made with love footer -->
-    
+    <div class="tarot-card">
+      <img src="images/5.png" />
+    </div>
 
-    <!-- <a href="https://www.linkedin.com/in/cmlohr/"
+    <div class="tarot-card">
+      <img src="images/4.png" />
+    </div>
+
+    <!-- card two temperance -->
+    <div class="tarot-card shuffle">
+      <img src="images/3.png" />
+    </div>
+
+    <!-- card three hanged-man -->
+    <div class="tarot-card">
+      <img src="images/2.png" />
+    </div>
+
+    <!-- card four hierophant -->
+    <div class="tarot-card">
+      <img src="images/1.png" />
+    </div>
+
+    <!--   <h1>Click to Shuffle</h1> -->
+  </div>
+
+  <!-- sm btns -->
+
+
+  <!-- made with love footer -->
+
+
+  <!-- <a href="https://www.linkedin.com/in/cmlohr/"
       ><button class="in-btn"><i class="fab fa-linkedin-in"></i></button
     ></a> -->
-    <!-- partial -->
-    <script>
-      function autoplay() {
-        var t = setTimeout(function () {
-          var button = document.querySelector('[title="Play"]') || false;
-          if (button) {
-            console.log("Click", button);
-            button.click();
-          }
-        }, 999);
-      }
-      document.addEventListener("DOMContentLoaded", (event) => {
-        autoplay();
-      });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenLite.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/easing/EasePack.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSPlugin.min.js"></script>
-    <script src="./script.js"></script>
-  </body>
+  <!-- partial -->
+  <script>
+    function autoplay() {
+      var t = setTimeout(function () {
+        var button = document.querySelector('[title="Play"]') || false;
+        if (button) {
+          console.log("Click", button);
+          button.click();
+        }
+      }, 999);
+    }
+    document.addEventListener("DOMContentLoaded", (event) => {
+      autoplay();
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenLite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/easing/EasePack.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSPlugin.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
 </html>
